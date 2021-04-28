@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Crypto for Covid</title>
+  </head>
+  <body>
+    <!-- <h1 class="trial">
+      <a href="https://pocketbits.in/" target="_blank">Yolo</a>
+    </h1>
+
+    <p id="btc">btcbtcbtc</p>
+    <button onclick="copyAddress('btc')">Copy btc</button>
+
+    <p id="eth">ethetheth</p>
+    <button onclick="copyAddress('eth')">Copy eth</button> -->
+
+    <div
+      style="
+        display: flex;
+        justify-content: space-between;
+        margin-left: 80px;
+        margin-right: 80px;
+      "
+    >
+      <p class="topLeft"><span style="color: #348aff">Crypto</span>ForCovid</p>
+      <a href="https://pocketbits.in/" target="_blank">
+        <button class="topRight">Donate Now</button>
+      </a>
+    </div>
+
+    <h1 class="heading">
+      Times are difficult and we must all do our best to help those in need in
+      this unprecendeted crisis.
+    </h1>
+
+    <div class="fancyShape">
+      <div class="fancyDiv">
+        <p class="introPara">
+          We at PocketBits are supporting the Crypto Community to donate for
+          Covid releif in India. We will be converting all crypto donations
+          received to INR every 48 hours and and donate equally to the
+          organisations listed below who are supplying oxygen, ventilators and
+          food on ground to those affected.
+        </p>
+        <p class="bit">It’s time to do our bit.</p>
+        <a href="https://pocketbits.in/" target="_blank">
+            <button class="bigDonate">Donate Now</button>
+        </a>
+        <p class="for">Donating For:</p>
+        <div
+          style="
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <img src="./imgs/org1.svg" alt="Hemkunt Foundation" />
+            <p>Oxygen Cylinder Distribution</p>
+          </div>
+          <div>
+            <img src="./imgs/org2.svg" alt="Khaana Chahiye" />
+            <p>Meal Distribution</p>
+          </div>
+          <div>
+            <img src="./imgs/org3.svg" alt="Feeding from far" />
+            <p>Meal Distribution</p>
+          </div>
+          <div>
+            <img src="./imgs/org4.svg" alt="Helping India breath again" />
+            <p>Oxygen Concentrators</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center">
+      <p
+        style="
+          font-weight: bold;
+          font-size: 64px;
+          line-height: 64px;
+          color: #348aff;
+          margin-bottom: 0px;
+          margin-top: 85px;
+        "
+      >
+        Rs. 24,43,343
+      </p>
+      <p
+        style="
+          font-weight: 600;
+          font-size: 36px;
+          line-height: 54px;
+          color: #484848;
+          margin-bottom: 60px;
+        "
+      >
+        Total amount Donated as on 24/04/21
+      </p>
+    </div>
+
+    <div class="bigContainer">
+      <div style="align-items: center; display: flex; margin-bottom: 15px">
+        <img src="./imgs/btc.svg" alt="BTC" style="margin-right: 15px" />
+        <p class="coinName">Donate BTC</p>
+      </div>
+      <div style="display: flex; justify-content: space-between">
+        <div class="addressContainer">
+          <p class="address" id="btc">098</p>
+        </div>
+        <button class="copyButton" onclick="copyAddress('btc')">
+          <img src="./imgs/copy.svg" alt="copy" />
+          <p class="buttonText">copy</p>
+        </button>
+      </div>
+
+      <div style="align-items: center; display: flex; margin-bottom: 15px">
+        <img src="./imgs/eth.svg" alt="ETH" style="margin-right: 15px" />
+        <p class="coinName">Donate ETH</p>
+      </div>
+      <div style="display: flex; justify-content: space-between">
+        <div class="addressContainer">
+          <p class="address" id="eth">765</p>
+        </div>
+        <button class="copyButton" onclick="copyAddress('eth')">
+          <img src="./imgs/copy.svg" alt="copy" />
+          <p class="buttonText">copy</p>
+        </button>
+      </div>
+
+      <div style="align-items: center; display: flex; margin-bottom: 15px">
+        <img src="./imgs/xrp.svg" alt="XRP" style="margin-right: 15px" />
+        <p class="coinName">Donate XRP</p>
+      </div>
+      <div style="display: flex; justify-content: space-between">
+        <div class="addressContainer">
+          <p class="address" id="xrp">432</p>
+        </div>
+        <button class="copyButton" onclick="copyAddress('xrp')">
+          <img src="./imgs/copy.svg" alt="copy" />
+          <p class="buttonText">copy</p>
+        </button>
+      </div>
+
+      <div style="align-items: center; display: flex; margin-bottom: 15px">
+        <img src="./imgs/doge.svg" alt="Doge" style="margin-right: 15px" />
+        <p class="coinName">Donate Doge</p>
+      </div>
+      <div style="display: flex; justify-content: space-between">
+        <div class="addressContainer">
+          <p class="address" id="doge">fdsafb3432gqKHLU908970-9jlkb</p>
+        </div>
+        <button class="copyButton" onclick="copyAddress('doge')">
+          <img src="./imgs/copy.svg" alt="copy" />
+          <p class="buttonText">copy</p>
+        </button>
+      </div>
+
+      <div style="align-items: center; display: flex; margin-bottom: 15px">
+        <img src="./imgs/bnb.svg" alt="BNB" style="margin-right: 15px" />
+        <p class="coinName">Donate BNB</p>
+      </div>
+      <div style="display: flex; justify-content: space-between">
+        <div class="addressContainer">
+          <p class="address" id="bnb">bbb</p>
+        </div>
+        <button class="copyButton" onclick="copyAddress('bnb')">
+          <img src="./imgs/copy.svg" alt="copy" />
+          <p class="buttonText">copy</p>
+        </button>
+      </div>
+
+      <div style="align-items: center; display: flex; margin-bottom: 15px">
+        <img src="./imgs/trx.svg" alt="Doge" style="margin-right: 15px" />
+        <p class="coinName">Donate TRX</p>
+      </div>
+      <div style="display: flex; justify-content: space-between">
+        <div class="addressContainer">
+          <p class="address" id="trx">123</p>
+        </div>
+        <button class="copyButton" onclick="copyAddress('trx')">
+          <img src="./imgs/copy.svg" alt="copy" />
+          <p class="buttonText">copy</p>
+        </button>
+      </div>
+
+      <div style="align-items: center; display: flex; margin-bottom: 15px">
+        <img src="./imgs/usdt.svg" alt="Doge" style="margin-right: 15px" />
+        <p class="coinName">Donate USDT (ERC20)</p>
+      </div>
+      <div style="display: flex; justify-content: space-between">
+        <div class="addressContainer">
+          <p class="address" id="usdt-erc">456</p>
+        </div>
+        <button class="copyButton" onclick="copyAddress('usdt-erc')">
+          <img src="./imgs/copy.svg" alt="copy" />
+          <p class="buttonText">copy</p>
+        </button>
+      </div>
+
+      <div style="align-items: center; display: flex; margin-bottom: 15px">
+        <img src="./imgs/usdt.svg" alt="Doge" style="margin-right: 15px" />
+        <p class="coinName">Donate USDT (TRC20)</p>
+      </div>
+      <div style="display: flex; justify-content: space-between">
+        <div class="addressContainer">
+          <p class="address" id="usdt-trc">789</p>
+        </div>
+        <button class="copyButton" onclick="copyAddress('usdt-trc')">
+          <img src="./imgs/copy.svg" alt="copy" />
+          <p class="buttonText">copy</p>
+        </button>
+      </div>
+    </div>
+
+    <p class="footerText">
+      For updates and amount collected/donated kindly follow us on our social
+      channels:
+    </p>
+    <div style="display: flex; justify-content: center">
+      <div>
+        <img
+          src="./imgs/twitter.svg"
+          alt="Twitter"
+          style="display: block; margin: auto"
+        />
+        <p class="socials">Twitter</p>
+      </div>
+      <div style="margin-left: 100px; margin-right: 100px">
+        <img
+          src="./imgs/inst.svg"
+          alt="Instgram"
+          style="display: block; margin: auto"
+        />
+        <p class="socials">Instgram</p>
+      </div>
+      <div>
+        <img
+          src="./imgs/fb.svg"
+          alt="FB"
+          style="display: block; margin: auto"
+        />
+        <p class="socials">FaceBook</p>
+      </div>
+    </div>
+
+    <script>
+      function copyAddress(coin) {
+        // alert(coin);
+        // var copyText = document.getElementById(coin);
+        var text = document.getElementById(coin).innerText;
+        var elem = document.createElement("textarea");
+        document.body.appendChild(elem);
+        elem.value = text;
+        elem.select();
+        document.execCommand("copy");
+        document.body.removeChild(elem);
+      }
+    </script>
+  </body>
+</html>
